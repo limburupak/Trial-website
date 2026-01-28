@@ -689,3 +689,58 @@ body {
         }
 }
 
+#menu-toggle {
+        display: none;
+      }
+      
+    
+      .menu-toggle {
+        display: none;
+        font-size: 26px;
+        cursor: pointer;
+      }
+      
+    
+      .nav-menu {
+        display: flex;
+        gap: 30px;
+      }
+      
+     
+      @media (max-width: 768px) {
+      
+        .menu-toggle {
+          display: block;
+        }
+      
+        .nav-menu {
+          display: none;
+          flex-direction: row;
+          background: hsl(208, 79%, 70%);
+          position: absolute;
+          top: 70px;
+          left: 0;
+          width: 100%;
+          text-align: center;
+          padding: 20px 0;
+          z-index: 999;
+        }
+        .nav-menu a {
+                display: block;
+                padding: 12px 0;
+                color:white;
+                font-size: 12px;
+                text-decoration: none;
+                margin-left: 10px;
+               
+        }
+      
+      
+        #menu-toggle:checked + .menu-toggle + .nav-menu {
+          display: flex;
+        }
+      }
+      
+
+
+
