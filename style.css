@@ -605,9 +605,7 @@ body {
         transition: transform 0.3s ease;
  }
 
- .store-buttons img:hover {
-        transform: scale(1.05);
- }
+
  @media (max-width:900px) {
         .app-container {
                 flex-direction: column;
